@@ -84,4 +84,8 @@ public class Date {
       return false;
     }
   }
+    
+  public String getFormattedData() {
+    return day + '/' + month "/" + year
 }
+
