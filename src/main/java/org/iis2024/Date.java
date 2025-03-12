@@ -55,10 +55,10 @@ public class Date {
    * @param year The year (should ideally be within the valid range of 1900 to 2050 for validation
    *     to pass).
    */
-  public Date(int dia, int mes, int ano) {
-    this.day = dia;
-    this.month = mes;
-    this.year = ano;
+  public Date(int day, int month, int year) {
+    this.day = day;
+    this.month = month;
+    this.year = year;
   }
 
   /**
@@ -83,10 +83,6 @@ public class Date {
     } catch (ParseException e) {
       return false;
     }
-  }
-    
-  public String getFormattedData() {
-    return day + '/' + month + "/" + year;
   }
 }
 
